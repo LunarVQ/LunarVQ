@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="260" viewBox="0 0 800 260">
+  <defs>
+    <radialGradient id="ps2-void" cx="25%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#10254c" />
+      <stop offset="50%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#020305" />
+    </radialGradient>
+
+    <linearGradient id="graphite-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a6578" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#2c323d" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#181b20" stop-opacity="0.5" />
+    </linearGradient>
+
+    <linearGradient id="chrome-edge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a0b0c8" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#404854" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0.6" />
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .ui-font { font-family: 'Helvetica Neue', 'Arial', sans-serif; letter-spacing: 2px; }
+      .data-font { font-family: 'Segoe UI', 'Verdana', sans-serif; letter-spacing: 1px; }
+      .orb1 { animation: float1 6s ease-in-out infinite alternate; }
+      .orb2 { animation: float2 8s ease-in-out infinite alternate; }
+      @keyframes float1 {
+        0% { transform: translate(0px, 0px) scale(1); opacity: 0.7; }
+        100% { transform: translate(40px, -25px) scale(1.2); opacity: 1; }
+      }
+      @keyframes float2 {
+        0% { transform: translate(0px, 0px) scale(1.1); opacity: 0.5; }
+        100% { transform: translate(-35px, 20px) scale(0.9); opacity: 0.9; }
+      }
+    </style>
+  </defs>
+
+  <a href="https://github.com/LunarVQ/rukios" target="_blank" rel="noopener noreferrer">
+    <title>Open LunarVQ/rukios on GitHub</title>
+
+    <rect width="800" height="260" rx="16" fill="url(#ps2-void)" />
+
+    <g filter="url(#glow)">
+      <circle class="orb1" cx="160" cy="120" r="18" fill="#0088ff" opacity="0.5" />
+      <circle class="orb1" cx="160" cy="120" r="6" fill="#e0f7ff" />
+      <circle class="orb2" cx="560" cy="80" r="24" fill="#0055ff" opacity="0.3" />
+      <circle class="orb2" cx="560" cy="80" r="5" fill="#88ccff" />
+    </g>
+
+    <text x="40" y="42" fill="#ffffff" font-size="15" font-weight="bold" class="ui-font">LunarVQ/rukios</text>
+    <text x="760" y="42" fill="#0088ff" font-size="13" text-anchor="end" class="ui-font">LICENSE: MIT</text>
+
+    <rect x="40" y="62" width="720" height="148" rx="12" fill="url(#graphite-glass)" stroke="url(#chrome-edge)" stroke-width="1.5" />
+    <text x="70" y="108" fill="#ffffff" font-size="28" font-weight="bold" class="ui-font">RUKIOS</text>
+    <text x="70" y="148" fill="#b0c4de" font-size="14" class="data-font">Languages: Assembly, Shell</text>
+    <text x="70" y="176" fill="#b0c4de" font-size="14" class="data-font">the bootloader for now</text>
+
+    <text x="40" y="242" fill="#a0b4cc" font-size="13" class="ui-font">Open Repo</text>
+
+    <rect width="800" height="260" rx="16" fill="transparent" />
+  </a>
+</svg>

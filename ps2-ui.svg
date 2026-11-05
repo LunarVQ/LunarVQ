@@ -62,7 +62,7 @@
     <text x="70" y="148" fill="#b0c4de" font-size="14" class="data-font">Languages: Assembly, Shell</text>
     <text x="70" y="176" fill="#b0c4de" font-size="14" class="data-font">the bootloader for now</text>
 
-    <text x="40" y="242" fill="#a0b4cc" font-size="13" class="ui-font">Open Repo</text>
+
 
     <rect width="800" height="260" rx="16" fill="transparent" />
   </a>
